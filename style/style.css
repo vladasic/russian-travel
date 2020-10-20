@@ -89,3 +89,48 @@ a {
     align-self: start;
     
 }
+
+.intro{
+    width: calc(100% - 296px);
+    margin: 92px auto ;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__title{
+    margin: 0;
+    width: 690px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.2rem;
+
+}
+
+.intro__text{
+    margin: 40px 0 32px;
+    width: 690px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.intro__list{
+    margin: 0;
+    padding: 0;
+    width: 690px;
+    list-style-type: none; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+.intro__list-light{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #AAAAAA;
+}
