@@ -134,3 +134,17 @@ a {
     line-height: 12px;
     color: #AAAAAA;
 }
+
+.photo-grid{
+    width: calc(100% - 96px);
+    margin: auto;
+    margin-bottom: 92px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 16px;
+}
+
+.photo-gird__item{
+    object-fit: cover;
+}
