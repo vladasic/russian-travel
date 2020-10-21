@@ -239,3 +239,44 @@ a {
     line-height: 163%;
 
 }
+
+.cover{
+    width: calc(100% - 96px);
+    height: 740px;
+    margin: auto;
+    background-image: url(/images/cover-trains.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s linear;
+    margin-bottom: 92px;
+}
+
+.cover:hover{
+    opacity: 0.5;
+ 
+}
+
+.cover__title{
+    width: 560px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: center;
+
+}
+
+.cover__subtitle{
+    width: 360px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+
+}
