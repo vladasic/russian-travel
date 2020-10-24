@@ -277,7 +277,7 @@ a {
    /* width: calc(100% - 96px);*/
     height: 740px;
     margin: auto;
-    background-image: url(/images/cover-trains.jpg);
+    background-image: url(../images/cover-trains.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
