@@ -1,0 +1,31 @@
+.place__paragraph-bottom{
+    margin: 0;
+    margin-top: 24px;
+    grid-area: paragraph-bottom;
+    width: 100%;
+    max-width: 484px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 163%;
+}
+
+@media screen and (max-width: 1024px) {
+    .place__paragraph-bottom{
+        max-width: 456px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .place__paragraph-bottom{
+        max-width: 352px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px){
+     .place__paragraph-bottom{
+        max-width: 288px;
+     }
+}

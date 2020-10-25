@@ -1,0 +1,30 @@
+.place{
+    display: grid;
+    grid-template-columns:repeat(minmax(min-content, max-content),1fr);
+    grid-template-rows: repeat(minmax(min-content, max-content),1fr);
+    column-gap: 40px;
+    grid-template-areas: 
+    "title  website"
+    "image paragraph-top"
+    "image paragraph-bottom"
+    "image .";
+}
+
+@media screen and (max-width: 1024px) {
+    .place__title{
+        max-width:440px;
+    }
+}    
+
+@media screen and (max-width: 420px){
+ .place{
+    row-gap: 32px;
+    grid-template-areas: 
+    "title "
+    "image "
+    "paragraph-top"
+    "paragraph-bottom";
+    column-gap:0;
+    row-gap: 32px; 
+ }
+}
