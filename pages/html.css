@@ -9,6 +9,6 @@ a {
 
 
 @media screen and (max-width: 760px){
-    .html{
+    html{
         font-size: 14px;
     }

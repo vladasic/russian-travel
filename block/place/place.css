@@ -18,13 +18,12 @@
 
 @media screen and (max-width: 420px){
  .place{
-    row-gap: 32px;
     grid-template-areas: 
     "title "
     "image "
     "paragraph-top"
     "paragraph-bottom";
     column-gap:0;
-    row-gap: 32px; 
+    row-gap: 32px;
  }
 }

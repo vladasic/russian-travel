@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding-bottom: 24px;
     display: grid;
-    grid-template-columns: repeat(5, min-content) 1fr ;
+    grid-template-columns: repeat(5, min-content) 1fr;
     column-gap: 18px;
 }
 .footer:nth-child(5){
