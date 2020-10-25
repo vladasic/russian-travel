@@ -8,9 +8,9 @@
 * 1028px
 * 720px
 * 320px
-**ссылка на проект**
-* https://github.com/vladasic/russian-travel
-**Что дополонить**
+### ссылка на проект
+ https://github.com/vladasic/russian-travel
+### Что дополонить
 
 * в будущем планируется внедрить JS.
 
