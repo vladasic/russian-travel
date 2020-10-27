@@ -2,8 +2,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 1.3rem;
-    line-height: 1.5;
-    color: white;
+    line-height: 1.5;    
     display: flex;
     gap:18px;
+    color: white;
+    text-decoration: none;
 }

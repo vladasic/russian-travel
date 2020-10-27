@@ -1,10 +1,20 @@
 .page{
     margin:0 auto;
-    
     font-family: 'Inter', 'Arial', 'sans-serif';
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     background: #2A2C2F;
     color: white;
+
+}
+
+    html{
+        font-size: 18px;
+    }
+
+@media screen and (max-width: 760px){
+    html{
+        font-size: 14px;
+    }
 }
