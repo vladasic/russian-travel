@@ -3,7 +3,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(5, min-content) 1fr;
-    column-gap: 18px; 
+    column-gap: 18px;
     list-style-type:none;
 }
 

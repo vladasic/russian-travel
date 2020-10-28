@@ -1,5 +1,5 @@
 .photo-grid{
-    width: 92.5%; 
+    width: 92.5%;
     margin: auto;
     margin-bottom: 92px;
     display: grid;
@@ -20,7 +20,7 @@
     .photo-grid{
         width:93.75%;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 16px 16px;
+        grid-gap: 16px;
         
     }
 }
