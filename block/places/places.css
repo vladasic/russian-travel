@@ -12,10 +12,16 @@
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     .places{
-        width:93.75%;
+        width: 93.45%;
         margin: 88px auto;
         column-gap: 28px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .places{
+        width: 100%;
     }
 }

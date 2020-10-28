@@ -3,14 +3,8 @@
     margin: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.8rem;
-    line-height: 0.9rem;
-}
-@media screen and (max-width: 760px){
-    .footer__copyright{
-        font-size: 1rem;
-        line-height: 0.9rem;
-    }
+    font-size: 14px;
+    line-height: 16px;
 }
 
 @media screen and (min-width: 420px) and (max-width: 759px){
@@ -24,7 +18,7 @@
     .footer__copyright{
         max-width: 186px;
         margin-top: 16px;
-        font-size:  1rem;
-        line-height:  1rem;
+        font-size: 14px;
+        line-height: 14px;
     }
 }

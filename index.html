@@ -3,30 +3,29 @@
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="./vendor/normalize.css">
      <link rel="stylesheet" href="./pages/index.css">
      <title>Путешествие по России</title>
  </head>
  <body>
   <div class="page">
-      <!-- добрый день товарищ куратор, надеюсь вы читаете это. Я не совсем понял что 
-        означает <<на десктопных разрешениях страница прокручивается по горизонтали (прокручивается на всем адаптиве)>>. Кураторы объяснии это так
-    что при отключении оверфлом один элемент выходит за рамки. Это я исправил. Если ошибка не в этом, могу ли я попросить немного подробнее
-    а лучше скринами показать мне на ошибку, Что касается page. Работа выложенна но видимо из-за потносительных путей сайт отображается не очень корректно. 
-    почему из-за путей? потому что я проверял его до того как расспределил всё по БЭМ структуре папок. Надеюсь вы это прочтёте.-->
     <header class="header">
         <img  src="./images/header-logo.svg" alt="изображение россии" class="header__logo">
-        <div class="header__lang-link">
-            <a href="#" class="header__lang-link-underline">Ru</a>
-            <a href="#" class="header__lang-link-none" >En</a>
-        </div>
+         <ul  class="header__lang-links">
+           <li><a href="#" class="header__lank-link header__lank-link-underline">Ru</a></li>
+            <li><a href="#" class="header__lank-link">En</a></li>
+         </ul>
     </header>
-        <div class="main">
+  <main class="main">
     <section class="lead">
          <h1 class="lead__title">Путешествия по России</h1>
-         <h2 class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</h2>
-         <div class="lead__image"></div>
-         <p class="lead__caption">ваша полка — верхняя</p>
+         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+         <figure class="lead__figure">
+            <img 
+            src="./images/lead-polka.jpg" class="lead__image" 
+            alt="снимок с полкой">
+            <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+          </figure>
+
     </section>
 
     <section class="intro">
@@ -68,7 +67,7 @@
     </section>
 
     <section class="places">
-        <div class="place">
+        <article class="place">
             <h3 class="place__title">Куршская коса</h3>
             <img src="images/place-kosa.jpg" alt="корни деревьев в воде" class="place__image">
            <div class="place__website">
@@ -84,8 +83,8 @@
                   россыпи небольших приморских городов. 
                  Атмосфера здешних мест исключает суету, 
                 окуная в спокойствие природы и запах стального, прохладного моря.</p>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
             <h3 class="place__title">Кольский</h3>
             <img src="images/place-kolsky.jpg" alt="горы в снегу" class="place__image">
            <div class="place__website">
@@ -101,8 +100,8 @@
                   земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта 
                   увидеть северное сияние начинает сбываться с билетом
                 в Мурманск.</p>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
             <h3 class="place__title">Алтай</h3>
             <img src="images/place-altai.jpg" alt="ноутбук на фоне зелени леса" class="place__image">
            <div class="place__website">
@@ -116,8 +115,8 @@
             <p class="place__paragraph-bottom">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом.
                  Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы,
                  а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
             <h3 class="place__title">Зимний Байкал</h3>
             <img src="images/place-winter-baikal.jpg" alt="красивый лёд" class="place__image">
            <div class="place__website">
@@ -131,8 +130,8 @@
                  место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя 
                 к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года 
                 на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
             <h3 class="place__title">Карелия</h3>
             <img src="images/place-karelia.jpg" alt="водоём посреди леса" class="place__image">
            <div class="place__website">
@@ -142,27 +141,32 @@
             <p class="place__paragraph-top">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. 
             В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья 
             в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
-        </div>
+        </article>
      </section>
     <section class="cover">
-        <a href="#" class="cover__link" >
+        <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="cover__link" >
          <div class="cover__background">
+            <div class="cover__overlay"></div>
             <h2 class="cover__title">До Байкала «на собаках»</h2>
             <p class="cover__subtitle">По мотивам учебной темы о 
                 Транссибе и iframes — путешествие от столицы до 
                 Байкала на электричках.</p>
-            <div class="cover__overlay"></div>
+           
          </div> 
         </a>
     </section>
-        </div>
-    <footer class="footer">
-        <a href="https://yandex.ru/maps" target="_blank"  class="footer__link">Карты</a>
-        <a href="https://yandex.ru/pogoda" target="_blank"  class="footer__link"> Погода</a>
-        <a href="https://rasp.yandex.ru" target="_blank"  class="footer__link"> Расписание</a>
-        <a href="https://calendar.yandex.ru" target="_blank"  class="footer__link"> Календарь</a>
-        <a href="https://travel.yandex.ru" target="_blank" class="footer__link"> Путешествия</a>
-        <p class="footer__copyright">© 2020. Растягаев</p>
+    </main>
+    <footer class="footer"> 
+        <nav>
+        <ul class="footer__lists">
+        <li class="footer__list"><a href="https://yandex.ru/maps" target="_blank"  class="footer__link">Карты</a></li>
+        <li class="footer__list"><a href="https://yandex.ru/pogoda" target="_blank"  class="footer__link"> Погода</a></li>
+        <li class="footer__list"><a href="https://rasp.yandex.ru" target="_blank"  class="footer__link"> Расписание</a></li>
+        <li class="footer__list"> <a href="https://calendar.yandex.ru" target="_blank"  class="footer__link"> Календарь</a></li>
+        <li class="footer__list"><a href="https://travel.yandex.ru" target="_blank" class="footer__link"> Путешествия</a></li>
+        <li class="footer__list "><p class="footer__copyright" >© 2020. Растягаев</p></li>
+        </ul> 
+        </nav>
     </footer>
   </div>
      

@@ -1,0 +1,9 @@
+.header__lank-link{
+	color: white;
+	text-decoration: none;
+	transition: opacity 0.5s linear;
+}
+
+.header__lank-link:hover{
+    opacity: 0.8;
+}
