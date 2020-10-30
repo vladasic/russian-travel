@@ -26,5 +26,6 @@
      .place__paragraph-top{
         max-width: 288px;
         margin: 0 16px;
+        margin-top: 7px;
      }
 } 

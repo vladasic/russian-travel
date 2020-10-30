@@ -1,5 +1,5 @@
 .cover{
-    min-width: 92.5%;
+    max-width: 92.5%;
     height: 740px;
     margin: auto;
     margin-bottom: 92px;
@@ -12,11 +12,12 @@
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     .cover{
         min-width:93.75%;
         height: 480px;
         margin-bottom: 88px;
+        
     }
 }
 

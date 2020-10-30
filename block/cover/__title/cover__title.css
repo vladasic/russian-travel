@@ -6,7 +6,8 @@
     font-size: 72px;
     line-height: 76px;
     text-align: center;
-    z-index: 5;
+    position: relative;
+    z-index: 3;
 }
 
 @media screen and (max-width:535px){

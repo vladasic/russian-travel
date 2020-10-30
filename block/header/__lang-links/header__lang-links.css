@@ -8,4 +8,10 @@
     gap:18px;
     list-style-type: none;
 }
-
+@media screen and (max-width: 430px){
+    .header__lang-links{
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 14px;
+  }
+}
